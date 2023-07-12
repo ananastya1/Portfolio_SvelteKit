@@ -3,8 +3,8 @@
 	"compilerOptions": {
 		// "allowJs": true,
 		// "checkJs": true,
-		"outDir": "./dist", // specify output directory here
-		"rootDir": "./src", // specify root directory here
+		"outDir": "./dist", 
+		"rootDir": "./src", 
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
