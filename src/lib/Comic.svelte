@@ -35,13 +35,13 @@
   });
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <title>Comic</title>
   <meta name="homework2" content="Comic description" />
-</svelte:head>
+</svelte:head> -->
 
-<div id="comic-page">
-  <a href="{base}/" id="home-link">Back to Home</a>
+<body>
+  <div id="comic-page">
   {#if comicData}
     <h1>{comicData.safe_title}</h1>
     <img src={comicData.img} alt={comicData.alt}>
@@ -49,8 +49,13 @@
     <p>{formatDistanceToNow(new Date(comicData.year, comicData.month - 1, comicData.day))} ago</p>
   {/if}
 </div>
+</body>
+
 
 <style>
+  	body {
+		margin: 0;
+	}
   #comic-page {
     display: flex;
     flex-direction: column;
@@ -58,22 +63,5 @@
     justify-content: center;
     height: 100vh;
     background-color: #4c631d;
-  }
-
-  #home-link {
-    display: inline-block;
-    color: white;
-    background-color: #4c631d;
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-
-  #home-link:hover {
-    background-color: #365a14;
   }
 </style>
