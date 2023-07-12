@@ -3,7 +3,7 @@ name: Build, deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ jobs:
 
       - name: Build website
         run: npm run build 
-             npx gh-pages -d build
+        run:  npx gh-pages -d build
 
 #       - name: Deploy to Pages 🚀
 #         uses: JamesIves/github-pages-deploy-action@v4
