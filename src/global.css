@@ -75,12 +75,5 @@
   font-weight: lighter;
 }
 
-:global(#arrow-top,
-#arrow-about,
-#arrow-skills) {
-  text-align: center;
-  margin: 40px auto;
-  padding: 0;
-}
 
 
