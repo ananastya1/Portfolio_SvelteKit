@@ -8,37 +8,51 @@
 	import stars4_5 from '../lib/images/stars4-5.png';
 </script>
 
-<section id="skills">
-	<h1 id="skills-h">—Skills—</h1>
-	<ul id="skills-list">
-		<li>
-			<img class="app-icon" src={python_icon} alt="Python Icon" />
-			<span>Python</span>
-			<img class="rating-icon" src={stars4_5} alt="Rating Icon" />
-		</li>
-		<li>
-			<img class="app-icon" src={js_icon} alt="JS Icon" />
-			<span>JavaScript</span>
-			<img class="rating-icon" src={stars3_5} alt="Rating Icon" />
-		</li>
-		<li>
-			<img class="app-icon" src={bd_icon} alt="SQL Icon" />
-			<span>SQL</span>
-			<img class="rating-icon" src={stars3_5} alt="Rating Icon" />
-		</li>
-		<li>
-			<img class="app-icon" src={git_icon} alt="Git Icon" />
-			<span>Git</span>
-			<img class="rating-icon" src={stars4_5} alt="Rating Icon" />
-		</li>
-	</ul>
-</section>
+<body>
+	<section id="skills">
+		<h1 id="skills-h">—Skills—</h1>
+		<ul id="skills-list">
+			<li>
+				<img class="app-icon" src={python_icon} alt="Python Icon" />
+				<span>Python</span>
+				<img class="rating-icon" src={stars4_5} alt="Rating Icon" />
+			</li>
+			<li>
+				<img class="app-icon" src={js_icon} alt="JS Icon" />
+				<span>JavaScript</span>
+				<img class="rating-icon" src={stars3_5} alt="Rating Icon" />
+			</li>
+			<li>
+				<img class="app-icon" src={bd_icon} alt="SQL Icon" />
+				<span>SQL</span>
+				<img class="rating-icon" src={stars3_5} alt="Rating Icon" />
+			</li>
+			<li>
+				<img class="app-icon" src={git_icon} alt="Git Icon" />
+				<span>Git</span>
+				<img class="rating-icon" src={stars4_5} alt="Rating Icon" />
+			</li>
+		</ul>
+	</section>
 
-<div id="arrow-skills">
-	<a href="#projects"><img src={arrow} alt="Arrow Icon" /></a>
-</div>
+	<div id="arrow-skills">
+		<a href="#projects"><img src={arrow} alt="Arrow Icon" /></a>
+	</div>
+</body>
 
 <style global>
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #4c631d;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 50px;
+		margin: 0;
+		letter-spacing: 5px;
+	}
 	section {
 		font-family: Montserrat, sans-serif;
 		background-color: #4c631d;
@@ -50,7 +64,7 @@
 		text-align: center;
 		margin: 40px auto;
 		padding: 0;
-    background-color: #4c631d;
+		background-color: #4c631d;
 	}
 	#skills li {
 		display: flex;
@@ -75,5 +89,24 @@
 
 	#skills-list li {
 		margin: 5%;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	li {
+		margin: 0 10px;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: lightgray;
 	}
 </style>
