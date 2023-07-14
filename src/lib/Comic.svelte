@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { formatDistanceToNow } from 'date-fns';
 
 	interface ComicResponse {
@@ -10,28 +9,7 @@
 		month: number;
 		day: number;
 	}
-
-	let comicData: ComicResponse | null = null;
-
-	onMount(async () => {
-		try {
-			const email = 'a.barabanova@innopolis.university';
-			const params = new URLSearchParams({ email: email });
-			const response: Response = await fetch(
-				`https://fwd.innopolis.university/api/hw2?${params.toString()}`
-			);
-			const comicId: string = await response.json();
-
-			const comicParams = new URLSearchParams({ id: comicId });
-			const comicResponse: Response = await fetch(
-				`https://fwd.innopolis.university/api/comic?${comicParams.toString()}`
-			);
-
-			comicData = await comicResponse.json();
-		} catch (error: unknown) {
-			console.error('Error:', error);
-		}
-	});
+	export let comicData: ComicResponse | null = null;
 </script>
 
 <body>
