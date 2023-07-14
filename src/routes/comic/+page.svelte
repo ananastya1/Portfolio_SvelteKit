@@ -1,4 +1,4 @@
-<script lang="ts">
+<script context="module" lang="ts">
 	import Comic from '../../lib/Comic.svelte';
 	import type { Fetch } from '@sveltejs/kit';
 	import { LoadInput, LoadOutput } from '@sveltejs/kit';

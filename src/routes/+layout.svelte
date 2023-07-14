@@ -5,8 +5,6 @@
 <header>
 	<nav>
 		<a href="{base}/">Home</a>
-		<!-- <a href="{base}#skills">Skills</a>
-    <a href="{base}#projects">Projects</a> -->
 		<a href="{base}/comic">Comic</a>
 	</nav>
 </header>
